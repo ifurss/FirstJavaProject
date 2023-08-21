@@ -11,8 +11,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Приветствую вас в приложении, пожалуйста введите необходимую операцию\n 1-кодировка, 2-декодировка, 3 - брутал форс");
-        int operation = scanner.nextInt();
+        //int operation = scanner.nextInt();
         FileCreation.fileRead();
+
     }
 }
 

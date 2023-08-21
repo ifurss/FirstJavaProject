@@ -20,6 +20,9 @@ public class FileCreation {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        Encryption.encryption(buf);
+
+
+        //Encryption.encryption(buf);
+        Decryption.decryption(buf);
     }
 }
