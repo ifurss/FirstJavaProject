@@ -23,6 +23,7 @@ public class FileCreation {
 
 
         //Encryption.encryption(buf);
-        Decryption.decryption(buf);
+        //Decryption.decryption(buf);
+        BrutalForce.brutalForceMethod(buf);
     }
 }

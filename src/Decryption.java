@@ -10,6 +10,10 @@ public class Decryption {
                     array[i] = Constants.getArray()[j+Constants.getArray().length - Constants.getKEY()];
                     break;
                 }
+                if(array[i] == temp && (j - Constants.getKEY()) < 0){
+                    array[i] = Constants.getArray()[j+Constants.getArray().length - Constants.getKEY()];
+                    break;
+                }
 
                 if(array[i] == Constants.getArray()[j] ){
                     array[i] = Constants.getArray()[j-Constants.getKEY()];
