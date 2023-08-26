@@ -7,7 +7,9 @@ public class BrutalForce {
         Scanner scanner = new Scanner(System.in);
         String keyWord = "stop";
         int key = 1;
+        System.out.println("Для начала работы программы Брут форсб пожалуйста введите \"Start\"");
         String keyWord2 = scanner.nextLine();
+
 
         while (!keyWord2.equalsIgnoreCase(keyWord)) {
 
@@ -29,6 +31,7 @@ public class BrutalForce {
             keyWord2 = scanner.nextLine();
 
         }
+        FileCreation.fileWrite(array);
         System.out.println(array);
         return array;
     }

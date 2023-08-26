@@ -10,17 +10,19 @@ public class Encryption {
                 char temp = Character.toLowerCase(Constants.getArray()[j]);
                 if(array[i] == Constants.getArray()[j] && (j + Constants.getKEY()) >= Constants.getArray().length){
                     array[i] = Constants.getArray()[j-Constants.getArray().length + Constants.getKEY()];
+
                 }
-                if(array[i] == temp && (j + Constants.getKEY()) >= Constants.getArray().length){
+                else if(array[i] == temp && (j + Constants.getKEY()) >= Constants.getArray().length){
                     array[i] = Constants.getArray()[j-Constants.getArray().length + Constants.getKEY()];
+
                 }
 
-                if(array[i] == Constants.getArray()[j] ){
+               else if(array[i] == Constants.getArray()[j] ){
                     array[i] = Constants.getArray()[j+Constants.getKEY()];
                     break;
                 }
 
-               if(array[i] == temp){
+              else if(array[i] == temp){
                    char temp2 = Character.toLowerCase(Constants.getArray()[j+Constants.getKEY()]);
                    array[i] = temp2;
                    break;
@@ -28,6 +30,8 @@ public class Encryption {
 
             }
         }
+        FileCreation.fileWrite(array);
+        System.out.println(array);
        return array;
     }
 

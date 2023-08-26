@@ -29,6 +29,7 @@ public class Decryption {
             }
 
         }
+        FileCreation.fileWrite(array);
         System.out.print(array);
         return array;
     }
